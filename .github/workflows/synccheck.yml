@@ -21,5 +21,5 @@ jobs:
           tracking-issue-body: |
             New commit in redsigma/UPMetroSkin:
             **{{ message }}** [link]({{ url }})
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           yes-create-issues: true

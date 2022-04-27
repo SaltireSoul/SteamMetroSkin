@@ -11,7 +11,7 @@ jobs:
     - name: Copycat
       uses: andstor/copycat-action@v4.0.0
       with:
-        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        personal_token: ${{ secrets.GH_TOKEN }}
         src_owner: redsigma
         src_repo_name: UPMetroSkin
         src_path: /Unofficial 4.x Patch/Main Files [Install First]/
@@ -26,4 +26,4 @@ jobs:
       uses: bdougie/close-issues-based-on-label@master
       env:
         LABEL: upstream-commit
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
