@@ -1,0 +1,25 @@
+name: Check Latest UPMetroSkin
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: poll-github-repo/action@v1
+        with:
+          repo-to-sync: redsigma/UPMetroSkin
+          path-to-sync: /Unofficial 4.x Patch/Main Files [Install First]/
+          cache-path: .last_sync
+          tracking-issue-label: upstream-commit
+          tracking-issue-title: "Update on {{ path }}: {{ sha-short }}"
+          tracking-issue-body: |
+            New commit in redsigma/UPMetroSkin:
+            **{{ message }}** [link]({{ url }})
+          token: ${{ secrets.GITHUB_TOKEN }}
+          yes-create-issues: true
