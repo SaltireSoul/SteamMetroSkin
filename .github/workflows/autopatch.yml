@@ -14,13 +14,17 @@ jobs:
         personal_token: ${{ secrets.GH_TOKEN }}
         src_owner: redsigma
         src_repo_name: UPMetroSkin
-        src_path: /Unofficial 4.x Patch/Main Files [Install First]/
+        src_path: /Unofficial 4.x Patch/Main Files [Install First]/.
         dst_path: /metro-for-steam/
         dst_owner: SaltireSoul
         dst_repo_name: SteamMetroSkin
         dst_branch: master
         src_branch: master
 
+  fin:
+    needs: copy
+    runs-on: ubuntu-latest
+    steps:
     - uses: actions/checkout@master
     - name: issue-closure
       uses: bdougie/close-issues-based-on-label@master

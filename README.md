@@ -4,6 +4,10 @@ This merges the [Metro for Steam skin](https://github.com/minischetti/metro-for-
 
 
 
+### Download
+Latest [release](https://github.com/SaltireSoul/SteamMetroSkin/archive/refs/heads/master.zip)
+
+
 ### Install Instructions
 
 - Extract/Copy metro-for-steam into your SteamDir/skins/ folder
