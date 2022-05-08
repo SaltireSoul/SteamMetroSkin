@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Copycat
-      uses: andstor/copycat-action@v4.0.0
+      uses: andstor/copycat-action@v3
       with:
         personal_token: ${{ secrets.GH_TOKEN }}
         src_owner: redsigma
