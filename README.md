@@ -2,8 +2,6 @@
 
 This merges the [Metro for Steam skin](https://github.com/minischetti/metro-for-steam) with the [Unofficial Patch](https://github.com/redsigma/UPMetroSkin/).
 
-
-
 ### Install Instructions
 
 ##### Manual updating
@@ -15,15 +13,18 @@ Download Latest [release](https://github.com/SaltireSoul/SteamMetroSkin/archive/
 
 ##### Git
 
+> From within SteamDir/skins/ folder via terminal
+
 *Required*: `git config --global --add safe.directory "C:/Program Files (x86)/Steam/skins"`
 
-- Tidy version
+- Tidy version (only fetches metro-for-steam directory)
+  
   ```bash
   git init
   git remote add -f origin https://github.com/SaltireSoul/SteamMetroSkin.git
   git config core.sparseCheckout true
   echo metro-for-steam >> .git/info/sparse-checkout
-
+  
   ## Download with pull, not clone
   git pull origin master
   ```
@@ -36,7 +37,6 @@ Download Latest [release](https://github.com/SaltireSoul/SteamMetroSkin/archive/
   ## Update with pull
   git pull
   ```
-
 
 ### Fonts
 
