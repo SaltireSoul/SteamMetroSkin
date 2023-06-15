@@ -1,3 +1,5 @@
+> New Steam client renders this skin obsolete
+
 # Metro for Steam with Unofficial Patch skin
 
 This merges the [Metro for Steam skin](https://github.com/minischetti/metro-for-steam) with the [Unofficial Patch](https://github.com/redsigma/UPMetroSkin/).
